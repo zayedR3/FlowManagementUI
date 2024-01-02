@@ -20,9 +20,9 @@ label {
 }
 /* Style for the dropdown button */
 select {
-    width: 100%;
+    width: 20%;
     padding: 8px;
-    margin-bottom: 15px;
+    margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -31,10 +31,30 @@ select {
 }
 
 #itemDropdown {
-    width: 30%;
+    width: 40%;
     padding: 10px;
-    margin-bottom: 20px;
     box-sizing: border-box;
+}
+
+#clientID{
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #555;
+}
+
+#OneFlowButon{
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
 
 #result {
@@ -105,17 +125,16 @@ button:hover {
     padding: 10px;
     border-radius: 5px;
     background-color: #fff;
-    margin-top: 10px;
     box-sizing: border-box;
 }
 
 #idResutl {
     border: 1px solid #3498db;
-    padding: 10px;
+padding: 10px;
     border-radius: 5px;
     background-color: #fff;
     margin-top: 10px;
-    max-height: 150px; /* Set a maximum height for the scroll box */
+    max-height: 250px; /* Set a maximum height for the scroll box */
     overflow-y: auto; /* Enable vertical scrolling if content exceeds the box height */
 }
 
@@ -132,23 +151,51 @@ button:hover {
 #call {
     display: -ms-inline-flexbox;
     flex-wrap: wrap;
+
 }
+
+/* Style for side-by-side input boxes */
+.flowcall-container {
+    display: flex;
+}
+
+.input-box, .text-box {
+    width: 150px; /* Set the desired width */
+    margin-right: 10px; /* Optional: Add margin for spacing between input boxes */
+}
+
+.queryoption-container{
+        display: flex;
+}
+
+
 
 #requestBody {
     flex: 1;
     box-sizing: border-box;
+    width: 100px; /* Set the desired width */
+    height: 300px; /* Set the desired height */
+    padding: 10px; /* Optional: Add padding for better aesthetics */
     margin-right: 10px; /* Add some margin between the input and button */
 }
 
 #postBtn {
     flex: 0 0 auto; /* Don't allow the button to grow or shrink */
+    margin-top: 10px; /* Add some margin between the button and result box */
     margin-right: 10px; /* Add some margin between the button and result box */
+    width: 500px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
 }
 
 #queryResult {
     flex: 1;
     box-sizing: border-box;
+    width: 100px; /* Set the desired width */
+    height: 300px; /* Set the desired height */
+    padding: 10px; /* Optional: Add padding for better aesthetics */
 }
 .content-box{
     padding: 10px; /* Add padding to the content boxes */
 }
+
+
