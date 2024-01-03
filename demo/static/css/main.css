@@ -81,11 +81,9 @@ button:hover {
 .tab {
     list-style-type: none; /* Remove default list styles */
     display: inline-block; /* Display tabs inline */
-    padding: 10px 20px; /* Add padding to the tabs */
-    margin: 0 10px; /* Add margin between tabs */
+    padding: 2px 00px; /* Add padding to the tabs */
+    margin: 0 1px; /* Add margin between tabs */
     cursor: pointer; /* Change cursor to pointer on hover */
-    border: 1px solid #ddd; /* Add a border to the tabs */
-    border-radius: 5px; /* Add rounded corners to the tabs */
 }
 
 

@@ -28,7 +28,7 @@
     <select id="itemDropdown"></select>
 
     <!-- Display the selected Flow Initiator -->
-    <p id="selectedX500Display"></p>
+    <p id="selectedX500Display">Please select a flow initiator</p>
 
     <!-- Content for the tabs -->
     <ul class="tab">
@@ -47,15 +47,15 @@
             <!-- Input field for the request body -->
             <label for="requestBody">Request Body: </label>
             <!-- Display area for the result of the Flow Call -->
-            <label for="queryResult">Result:</label>
+
         </div>
         <div class="flowcall-container">
-            <textarea type="text" id="requestBody" class="input-box" placeholder="Enter Json Format"></textarea>
+            <textarea type="text" id="requestBody" class="input-box" placeholder="Enter Json Format" style="resize:none" ></textarea>
 
             <div type="text" id="queryResult" class="text-box output">Result will be displayed here</div>
         </div>
         <!-- Button to initiate a Flow Call -->
-        <button id="postBtn" onclick="postCallFlow()">Post</button>
+        <center><button id="postBtn" onclick="postCallFlow()">Post</button></center>
     </div>
 
     <!-- Content for the 'Flow Query' tab -->
@@ -65,7 +65,7 @@
 
         <div class="queryoption-container">      
             <!-- Dropdown for selecting a query option -->
-            <select id="dropdown" class="dropdown">
+            <select id="dropdown" class="dropdown" style="height: 34px">
                 <option value="option1">Query All Flows</option>
                 <option value="option2">Query Single Flow</option>
             </select>
