@@ -3,7 +3,7 @@
 // Variable to store the selected X500Name from the dropdown
 let selectedX500Name;
 
-// Variable to indicate whether data is currently being loaded
+// Variable to indicate whether data is currently being loaded from the pull request
 let loading = false;
 
 // Function to make a GET request to an external API and return the data
@@ -25,7 +25,7 @@ function getData() {
         });
 }
 
-// Function to get data and display it on the page
+// Function to get the data and display it on the page
 function getDataAndDisplay() {
     getData()
         .then(result => {
@@ -42,7 +42,6 @@ function getDataAndDisplay() {
 
 // Function to make a GET request to retrieve CPI data
 function getCPI() {
-    // Replace the URL with the actual CPI API endpoint
     const url = 'https://localhost:8888/api/v1/cpi';
     // Perform the GET request with authorization headers
     return fetch(url, {
@@ -118,7 +117,7 @@ function getAllVirtualNodes() {
 // Initialize the virtual nodes dropdown on page load
 getAllVirtualNodes();
 
-// Example function to handle dropdown change
+// function to handle dropdown change
 function handleDropdownChange(selectedX500Name) {
     console.log('Handling dropdown change for Item ID:', selectedX500Name);
     getSelectedVNode();
@@ -252,7 +251,7 @@ function openTab(tabName) {
     }
 }
 
-// Function to initiate a flow for a specific virtual node
+// Function to display a flow for a specific virtual node
 function oneFlow() {
     const url = `https://localhost:8888/api/v1/flow/${selectedX500Name}/${document.getElementById('clientID').value}`;
 
@@ -262,7 +261,7 @@ function oneFlow() {
         return;
     }
 
-    // Perform a GET request to initiate a flow
+    // Perform a GET request to display a flow
     return fetch(url, {
         method: 'GET',
         headers: {
