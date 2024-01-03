@@ -303,9 +303,18 @@ function oneFlow() {
 // Function to determine which flow-related action to execute based on user input
 function executeButtonFlow() {
     // Check the value of the dropdown to determine which action to perform
-    if (document.getElementById("dropdown").value == "option1") {
+    if (document.getElementById("dropdown").value == "option2") {
         getAllFlowResult();
     } else {
         oneFlow();
+    }
+}
+
+function queryDropDownChange(){
+    if (document.getElementById("dropdown").value == "option2") {
+        document.getElementById("clientID").style.display = 'none';
+    }else{
+        document.getElementById("clientID").style.display = 'block';
+
     }
 }
