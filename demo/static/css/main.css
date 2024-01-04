@@ -132,8 +132,8 @@ button:hover {
     border-radius: 5px;
     background-color: #fff;
     margin-top: 10px;
-    height: 292px;
-    max-height: 292px; /* Set a maximum height for the scroll box */
+    height: 291px;
+    max-height: 291px; /* Set a maximum height for the scroll box */
     overflow-y: auto; /* Enable vertical scrolling if content exceeds the box height */
 }
 
