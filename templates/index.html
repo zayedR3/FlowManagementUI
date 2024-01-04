@@ -33,8 +33,8 @@
     <!-- Content for the tabs -->
     <ul class="tab">
         <!-- Tabs for different actions -->
-        <li class="tab" onclick="openTab('call')">Flow Call</li>
-        <li class="tab" onclick="openTab('Query')">Flow Query</li>
+        <li class="tab" onclick="openTab('call')" id="call-tab" style="background-color: rgb(173,216,230)">Flow Call</li>
+        <li class="tab" onclick="openTab('Query')" id="Query-tab" style="background-color: rgb(52,152,219)">Flow Query</li>
 
         <!-- Container for displaying query results under the 'Query' tab -->
         <div id="queryResult1"></div>
@@ -50,7 +50,7 @@
 
         </div>
         <div class="flowcall-container">
-            <textarea type="text" id="requestBody" class="input-box" placeholder="Enter Json Format" style="resize:none" ></textarea>
+            <textarea type="text" id="requestBody" class="input-box" placeholder="Enter Json Format" style="resize: none; " ></textarea>
 
             <div type="text" id="queryResult" class="text-box output">Result will be displayed here</div>
         </div>
@@ -65,16 +65,16 @@
 
         <div class="queryoption-container">      
             <!-- Dropdown for selecting a query option -->
-            <select id="dropdown" class="dropdown" style="height: 34px" onchange="queryDropDownChange()">
-                <option value="option1">Query Single Flow</option>
-                <option value="option2">Query All Flows</option>
+            <select id="dropdown" class="dropdown" style="height: 35px" onchange="queryDropDownChange()">
+                <option value="option1">Query All Flows</option>
+                <option value="option2">Query Single Flow</option>
             </select>
 
             <!-- Input field for providing a ClientID for queries -->
-            <input type="text" id="clientID" placeholder="ClientID">
+            <input type="text" id="clientID" placeholder="ClientID" style="display: none; height: 35px">
 
             <!-- Button to execute the selected Flow Query -->
-            <button id="OneFlowButon" onclick="executeButtonFlow()">Get</button>  
+            <button id="OneFlowButon" onclick="executeButtonFlow()" style="width: 100px; height: 35px">Get</button>  
         </div>
 
 

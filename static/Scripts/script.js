@@ -242,12 +242,14 @@ function openTab(tabName) {
     var tabContents = document.getElementsByClassName("tab-content");
     for (var i = 0; i < tabContents.length; i++) {
         tabContents[i].style.display = "none";
+        document.getElementById(tabContents[i].id + "-tab").style.backgroundColor = "rgb(52,152,219)";
     }
 
     // Show the selected tab content
     var selectedTab = document.getElementById(tabName);
     if (selectedTab) {
         selectedTab.style.display = "block";
+        document.getElementById(tabName + "-tab").style.backgroundColor = "rgb(173,216,230)";
     }
 }
 
@@ -303,7 +305,7 @@ function oneFlow() {
 // Function to determine which flow-related action to execute based on user input
 function executeButtonFlow() {
     // Check the value of the dropdown to determine which action to perform
-    if (document.getElementById("dropdown").value == "option2") {
+    if (document.getElementById("dropdown").value == "option1") {
         getAllFlowResult();
     } else {
         oneFlow();
@@ -311,7 +313,7 @@ function executeButtonFlow() {
 }
 
 function queryDropDownChange(){
-    if (document.getElementById("dropdown").value == "option2") {
+    if (document.getElementById("dropdown").value == "option1") {
         document.getElementById("clientID").style.display = 'none';
     }else{
         document.getElementById("clientID").style.display = 'block';
