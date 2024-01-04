@@ -128,11 +128,12 @@ button:hover {
 
 #idResutl {
     border: 1px solid #3498db;
-padding: 10px;
+    padding: 10px;
     border-radius: 5px;
     background-color: #fff;
     margin-top: 10px;
-    max-height: 250px; /* Set a maximum height for the scroll box */
+    height: 292px;
+    max-height: 292px; /* Set a maximum height for the scroll box */
     overflow-y: auto; /* Enable vertical scrolling if content exceeds the box height */
 }
 
@@ -160,6 +161,8 @@ padding: 10px;
 .input-box, .text-box {
     width: 150px; /* Set the desired width */
     margin-right: 10px; /* Optional: Add margin for spacing between input boxes */
+    border-radius: 5px;
+    border: 1px solid #3498db;
 }
 
 .queryoption-container{
