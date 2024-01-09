@@ -23,7 +23,7 @@ This user guide provides step-by-step instructions on using the Corda 5 flow man
 
    * Later on, click on the IP Address which will open the Interface:
 
-![image](https://github.com/parisyup/FlowManagementUI/image(4).png)
+![image](image(4).png)
 
 The Flow Management Tool should be automatically connected with the CorDapp running locally from your CSDE. You can test the connection by click on the dropdown list at the Flow Initiator section. You should be able to see the vNodes of your started CorDapp from CSDE.
 
