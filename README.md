@@ -41,7 +41,7 @@ As the first step of using the Flow Management Tool, you would need to select th
 2. Paste the your JSON format request body into the request input box.
 3. Click Post button to trigger the call.
 
-![image](https://github.com/parisyup/FlowManagementUI/image(5).png)
+![image](image(5).png)
 
 ### Function 2: To Configure Flow Query
 
@@ -53,7 +53,7 @@ As the first step of using the Flow Management Tool, you would need to select th
 4. If you choose to query a single flow, select “Query Single Flow“, please add the ClientID in specified filed.
 5. Click on “Get” to retrieve the result.
 
-![image](https://github.com/parisyup/FlowManagementUI/image(6).png)
+![image](image(6).png)
 If you have any suggestions or questions, feel free to give us your feedback through Github for a better experience in the future!
 
 ## Conclusion
