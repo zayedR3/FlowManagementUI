@@ -38,7 +38,9 @@ The Flow Management Tool should be automatically connected with the CorDapp runn
 
 3- Ensure that Docker application is open and build the image using the following command:
 `docker build -t your-image-name .`
+
 Make sure to include the dot at the end of the command
+
 the `your-image-name` at the end of the command can be whatever you like but make sure to use the same name in the next step
 
 4- Run the docker image using the following command:
