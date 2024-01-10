@@ -23,7 +23,8 @@ This user guide provides step-by-step instructions on using the Corda 5 flow man
 
    * Later on, click on the IP Address which will open the Interface:
 
-![image](image(4).png)
+![image(4)](https://github.com/parisyup/FlowManagementUI/assets/66366646/8d88e37c-edbb-4d6d-8bcd-d773e818a106)
+
 
 The Flow Management Tool should be automatically connected with the CorDapp running locally from your CSDE. You can test the connection by click on the dropdown list at the Flow Initiator section. You should be able to see the vNodes of your started CorDapp from CSDE.
 
@@ -41,7 +42,8 @@ As the first step of using the Flow Management Tool, you would need to select th
 2. Paste the your JSON format request body into the request input box.
 3. Click Post button to trigger the call.
 
-![image](image(5).png)
+![image(5)](https://github.com/parisyup/FlowManagementUI/assets/66366646/c65195a6-0a70-4354-804e-37884f657746)
+
 
 ### Function 2: To Configure Flow Query
 
@@ -53,7 +55,8 @@ As the first step of using the Flow Management Tool, you would need to select th
 4. If you choose to query a single flow, select “Query Single Flow“, please add the ClientID in specified filed.
 5. Click on “Get” to retrieve the result.
 
-![image](image(6).png)
+![image(6)](https://github.com/parisyup/FlowManagementUI/assets/66366646/13e979b0-f76e-4f2c-9d55-81be8880890b)
+
 If you have any suggestions or questions, feel free to give us your feedback through Github for a better experience in the future!
 
 ## Conclusion
