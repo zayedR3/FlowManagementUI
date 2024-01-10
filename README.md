@@ -30,6 +30,21 @@ The Flow Management Tool should be automatically connected with the CorDapp runn
 
 ![image](https://github.com/parisyup/FlowManagementUI/assets/51169685/5a2356f2-cd14-489c-abd0-4afe0bf0d251)
 
+## Set Up With Docker
+
+1- Open up Command Prompt
+
+2- Navigate to the application folder using the CD commands
+
+3- Ensure that Docker application is open and build the image using the following command:
+``
+Make sure to include the dot at the end of the command
+
+4- Run the docker image using the following command:
+`docker run --rm -it --expose 8888 -p 5000:5000 flow-management`
+
+5- You can access the website by using https://localhost:5000 or https://127.0.0.1:5000
+
 ## Using the Flow Management Tool
 
 ### Selecting the Flow Initiator
