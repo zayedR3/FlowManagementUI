@@ -37,11 +37,12 @@ The Flow Management Tool should be automatically connected with the CorDapp runn
 2- Navigate to the application folder using the CD commands
 
 3- Ensure that Docker application is open and build the image using the following command:
-``
+`docker build -t your-image-name .`
 Make sure to include the dot at the end of the command
+the `your-image-name` at the end of the command can be whatever you like but make sure to use the same name in the next step
 
 4- Run the docker image using the following command:
-`docker run --rm -it --expose 8888 -p 5000:5000 flow-management`
+`docker run --rm -it --expose 8888 -p 5000:5000 your-image-name`
 
 5- You can access the website by using https://localhost:5000 or https://127.0.0.1:5000
 
